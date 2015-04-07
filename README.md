@@ -1,2 +1,0 @@
-# mtmst
-Silnik MATMASTERa.
