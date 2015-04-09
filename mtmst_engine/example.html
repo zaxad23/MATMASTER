@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MATMASTER 2.0 REBOOT</title>
+    <style>
+      i.mtmst {
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body style="font-family:Helvetica,Arial,sans-serif;" onload="MTMST.engine();">
+	<center>
+		<h1>MATMASTER reboot (mtmst)</h1>
+		<b id="mtmst">
+		<i class="mtmst" id="mtmst_1"></i>
+		<i class="mtmst" id="mtmst_znak"></i>
+		<i class="mtmst" id="mtmst_2"></i>
+		=
+		<input id="mtmst_input" onkeyup="MTMST.enter(event)">
+		</b>
+		<button onclick="MTMST.sprawdz()">Sprawdź</button><br>
+		<br>
+		<div id="dobrze" style="display:none;">
+			<b style="color:lime;">Dobrze! :)</b><br><br>
+		</div>
+		<div id="zle" style="display:none;">
+			<b style="color:red;">Źle! :(</b><br>
+			<b style="color:lime;">Rozwiązanie: <span id="rozwiazanie">8</span></b><br><br>
+		</div>
+		<div id="punkty">
+			Odpowiedzi poprawne: <b id="dobrepunkty" style="color:lime;">0</b><br>
+			Odpowiedzi błędne: <b id="zlepunkty" style="color:red;">0</b>
+		</div>
+		<h6>UWAGA! Projekt <i>mtmst</i> jest jeszcze nie skończony i jest w fazie <i>beta</i>.</h6>
+	</center>
+    <script type="text/javascript" src="mtmstreboot.js"></script>
+  </body>
+</html>
